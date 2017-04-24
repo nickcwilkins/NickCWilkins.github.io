@@ -1,122 +1,63 @@
 /*#############################################
-##########       MAIN STYLING        ##########
+##########       GLOBAL STYLES       ##########
 #############################################*/
 
-/* GLOBAL STYLES */
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'opensans';
+}
+
 a {
-   text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-   background-color: #265b6a;
-   background: linear-gradient(#265b6a, transparent 800px),
-               url('../img/headerBackground.jpg');
-   background-size: cover;
-   background-attachment: fixed;
-}
-
-#wrapper {
-   max-width: 1080px;
-   margin: auto;
+  background-color: #265b6a;
+  background: linear-gradient(#265b6a, transparent 800px), url('../img/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 p {
-   line-height: 1.2;
+  line-height: 1.2;
 }
 
-.largeImageRed {
-   display: block;
-   margin: 0 auto;
-   max-width: 80%;
-   margin-top: 40px;
-   box-shadow: 0 0 10px red;
+#wrapper {
+  max-width: 1080px;
+  margin: auto;
 }
-
-.largeImageDefault {
-   display: block;
-   margin: 0 auto;
-   max-width: 80%;
-   margin-top: 40px;
-   box-shadow: 0 0 10px black;
-}
-
-/********** FONTS **********/
-
-/* stroke */
-@font-face {
-   font-family: stroke;
-   src: url('../fonts/stroke/stroke.otf') format('opentype');
-}
-@font-face {
-   font-family: strokeLight;
-   src: url('../fonts/stroke/strokeLight.otf') format('opentype');
-}
-@font-face {
-   font-family: strokeBold;
-   src: url('../fonts/stroke/strokeBold.otf') format('opentype');
-}
-
-/* prosto */
-@font-face {
-   font-family: prosto;
-   src: url('../fonts/prosto/prosto.ttf') format('truetype');
-}
-
-/* Open Sans */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 /***** MAIN NAVIGATION *****/
 #mainNav {
-   position: fixed;
-   top: 0;
-   right: 0;
-   left: 0;
-   list-style: none;
-   text-align: center;
-   background-color: #265b6a;
-   box-shadow: 0 1px 1px 1px rgba(2, 58, 74, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  list-style: none;
+  text-align: center;
+  background-color: #265b6a;
+  box-shadow: 0 1px 1px 1px rgba(2, 58, 74, 0.8);
 }
 
 #mainNav ul li {
-   font-family: prosto;
-   font-size: 1.15em;
-   color: #fff;
-   display: inline-block;
-   width: 30%;
-   padding: 7px 0;
+  font-size: 1.15em;
+  color: #fff;
+  display: inline-block;
+  width: 30%;
+  padding: 7px 0;
 }
 
 #mainNav ul li a.selected, #mainNav ul li a:hover { 
-   text-shadow: 0 0 10px red;
-   color: red;
+  text-shadow: 0 0 6px red;
+  color: red;
 }
 
 #mainNav li a:visited, #mainNav li a:link {
-   color: #fff;
+  color: #fff;
 }
 
 #mainNav li:not(:last-child) {
-   border-right: 1px solid black;
-   margin-right: -1px;
-}
-
-/***** LIGHTBOX *****/
-
-#lightbox {
-   background-color: rgba(0, 0, 0, .7);
-   width: 100%;
-   height: 100%;
-   position: fixed;
-   top: 0;
-   left: 0;
-   display: none;
-   text-align: center;
-}
-
-#lightbox img {
-   max-width: 60%;
-   border-radius: 5px;
-   margin-top: 10%;
+  border-right: 1px solid black;
+  margin-right: -1px;
 }
 
 /*#############################################
@@ -124,135 +65,29 @@ p {
 #############################################*/
 
 #homeHeader {
-   margin-top: 30px;
-   height: 900px;
+  margin-top: 30px;
+  height: 900px;
 }
 
 #heading,
 #heading2 {
-   margin-left: 20%;
-   margin-right: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
+
 #heading {
-   font-family: prosto;
-   font-size: 2em;
-   color: #fff;
-   padding-top: 25px;
+  font-size: 2em;
+  color: #fff;
+  padding-top: 25px;
 }
 
 #heading2 {
-   font-family: prosto;
-   font-size: 1.5em;
-   color: #fff;
-   margin-top: 8px;
-}
-
-.intro {
-   text-align: center;
-   font-family: 'Open Sans';
-   font-size: 1.25em;
-   color: #fff;
-   margin: 40px 20%;
-}
-
-#beginButton {
-   padding: 10px 60px;
-   margin: 220px auto;
-   border: none;
-   border-radius: 5px;
-   background-color: #023a4a;
-   box-shadow: 0 0 2px black;
-   text-shadow: 0 0 2px;
-   color: #fff;
-   font-family: prosto;
-   display: block;
-}
-
-/***** REUSABLE CLASSES *****/
-
-.headingExpIntro {
-   text-align: center;
-   font-family: prosto;
-   color: #fff;
-   margin-top: 60px;
-   text-decoration: underline;
-   font-size: 1.45rem;
-}
-
-.expIntroText { 
-   font-family: 'Open Sans';
-   font-size: 1.3rem;
-   width: 75%;
-   margin: 25px auto 0;
-   text-indent: 30px;
-   color: #fff;
-}
-
-/***** COMPUTER HARDWARE *****/
-#scroll {
-   padding-top: 40px;
-}
-#tableIntroImage {
-   max-width: 50%;
-   margin: 30px auto 0;
-   display: block;
-   border-radius: 10px;
-}
-#imageTable {
-   margin: 0 auto;
-   font-family: 'Open Sans';
-   text-align: center;
-   color: white;
-}
-
-#imageTable .tableImages td {
-   max-width: 28.3%;
-   padding: 1.25%;
+  font-size: 1.5em;
+  color: #fff;
+  margin-top: 8px;
 }
 
 
-#imageTable img {
-   width: 100%;
-   border-radius: 5px;
-}
-
-#completeComputer {
-   display: block;
-   margin: 0 auto;
-   max-width: 80%;
-   border-radius: 10px;
-   box-shadow: 0 0 10px red;
-   margin-top: 40px;
-}
-
-#completeComputerSpan {
-   text-align: center;
-   margin-top: 10px;
-}
-
-/***** NETWORKING *****/
-
-
-
-
-
-
-
-/**** WEB DEVELOPMENT *****/
-
-#webDevelopment li {
-   float: left;
-   max-width: 40%;
-   margin: 40px 5%;
-   
-   background-color: #9cf;
-   box-shadow:  0 0 5px #999;
-}
-#webDevelopment li img {
-   width: 93.3%;
-   border-radius: 20px;
-   margin: 5px 3.3% 0;
-}
 
 
 
@@ -262,32 +97,7 @@ p {
 ##########       PAGE: ABOUT         ##########
 #############################################*/
 
-#aboutHeader {
-   margin-top: 40px;
-}
 
-#aboutSection1{
-   margin-top: 40px;
-}
-#aboutImage1 {
-   max-width: 200px;
-   float: left;
-   border-radius: 50%;
-}
-
-#aboutImage2 {
-   max-width: 200px;
-   float: right;
-   border-radius: 50%;
-}
-
-.aboutText {
-   font-family: 'Open Sans';
-   font-size: 1.3rem;
-   color: white;
-   text-indent: 30px;
-   padding: 5px;
-}
 
 
 
@@ -299,77 +109,6 @@ p {
 ##########       PAGE: CONTACT       ##########
 #############################################*/ 
 
-   #primary {
-      width: 45%;
-      float:left;
-      padding: 100px 0;
-      color: white;
-      margin-left: 4%;
-   }
-
-   #primary p {
-      font-family: prosto;
-      font-size: 1.1rem;
-   }
-   
-   #secondary {
-      width: 45%;
-      float: left;
-      padding: 100px 0;
-      color: white;
-      margin-left: 4%;
-   }
-
-.contactHeading {
-   font-family: prosto;
-   font-size: 1.3rem;
-   padding-bottom: 20px;
-}
-
-.contactInfo {
-   list-style: none;
-   padding: 0;
-   margin: 0;
-   font-size: 1.1em;
-   font-family: prosto;
-}
-
-.contactInfo a {
-   display: block;
-   min-height: 20px;
-   background-repeat: no-repeat;
-   background-size: 20px 20px;
-   padding: 0 0 0 30px;
-   margin: 0 0 10px;
-}
-
-.contactInfo li.phone a {
-   background-image: url('../img/phoneIcon.png');
-}
-
-.contactInfo li.mail a {
-   background-image: url('../img/mailIcon.png');
-}
-
-.contactInfo li.twitter a {
-   background-image: url('../img/twitterIcon.png');
-}
-
-.contactInfo a:visited,
-.contactInfo a:link {
-   color: white;
-}
-
-footer {
-   text-align: center;
-   color: white;
-   font-family: sans-serif;
-}
-.social {
-   width: 60px;
-   display: inline-block;
-   margin: 0 20%;
-}
 
 
 

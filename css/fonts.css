@@ -1,0 +1,35 @@
+/* open sans */
+@font-face {
+  font-family: 'opensans';
+  src: url(../fonts/opensans/regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'opensans';
+  src: url(../fonts/opensans/Light.ttf) format('truetype');
+  font-style: normal;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'opensans';
+  src: url(../fonts/opensans/Semibold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: 'opensans';
+  src: url(../fonts/opensans/Bold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'opensans';
+  src: url(../fonts/opensans/Italic.ttf) format('truetype');
+  font-style: italic;
+  font-weight: normal;
+}
